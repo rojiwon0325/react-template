@@ -1,11 +1,11 @@
 import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
-  );
-};
+const App: React.FC = () => (
+  <Routes>
+    <Route path="/" element={<div></div>}></Route>
+    <Route path="*" element={<Navigate to="/" replace />} />
+  </Routes>
+);
 
 export default App;

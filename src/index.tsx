@@ -4,6 +4,7 @@ import App from "App";
 import reportWebVitals from "reportWebVitals";
 import Provider from "components/common/Provider";
 import { queryClient } from "states/api/client";
+import "./styles/style.css";
 
 const root = document.getElementById("root");
 if (root) {
